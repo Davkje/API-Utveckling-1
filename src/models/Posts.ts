@@ -5,10 +5,10 @@ export class Post {
   author: string = "";
   
 
-  constructor (content: string) {
+  constructor(title: string, content: string, author: string) {
     this.id = Math.round(Math.random() * 1000);
-    this.title = content;
+    this.title = title;
     this.content = content;
-    this.author = content;
+    this.author = author;
   }
 }

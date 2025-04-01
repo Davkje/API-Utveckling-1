@@ -9,6 +9,8 @@ const posts: Post[] = [
   new Post("A New Post", "A new content piece for testing", "Bob"),
 ];
 
+// POST CONTROLLERS - FÖR OM MED SQL
+
 export const fetchAllPosts = (req: Request, res: Response) => {
   const search = req.query.search;
   const sort = req.query.sort;
